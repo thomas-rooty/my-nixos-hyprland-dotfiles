@@ -48,6 +48,8 @@ in
     yazi                              # terminal file manager
     yt-dlp-light
     xdg-utils
+    xdg-desktop-portal
+    xdg-desktop-portal-wlr
     xxd
 
     ## CLI 

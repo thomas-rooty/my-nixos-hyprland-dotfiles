@@ -25,13 +25,13 @@ in
       # nix language
       bbenoist.nix
       # nix-shell suport 
-      arrterian.nix-env-selector
-      # python
-      ms-python.python
+      #arrterian.nix-env-selector
+      ## python
+      #ms-python.python
       # C/C++
-      ms-vscode.cpptools
+      #ms-vscode.cpptools
       # OCaml
-      ocamllabs.ocaml-platform
+      #ocamllabs.ocaml-platform
 
       # Color theme
       jdinhlife.gruvbox

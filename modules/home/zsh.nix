@@ -21,6 +21,9 @@
       setopt hist_expire_dups_first
       setopt hist_ignore_dups
       setopt hist_verify
+
+      # Brave atlas to run under wayland mode
+      alias brave="brave --enable-features=UseOzonePlatform --ozone-platform=wayland"
       
       # Use fd (https://github.com/sharkdp/fd) for listing path candidates.
       # - The first argument to the function ($1) is the base path to start traversal
