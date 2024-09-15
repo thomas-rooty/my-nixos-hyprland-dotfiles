@@ -9,19 +9,20 @@
         "hash dbus-update-activation-environment 2>/dev/null &"
         "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP &"
         "nm-applet &"
-        "wl-clip-persist --clipboard both"
+        #"wl-clip-persist --clipboard both"
         "swaybg -m fill -i $(find ~/Pictures/wallpapers/ -maxdepth 1 -type f) &"
         "hyprctl setcursor Bibata-Modern-Ice 16 &"
         "poweralertd &"
         "waybar &"
         "swaync &"
-        "wl-paste --watch cliphist store &"
+        #"wl-paste --watch cliphist store &"
+        "copyq --start-server"
         "hyprlock"
       ];
 
       input = {
         kb_layout = "fr";
-        kb_options ="grp:alt_caps_toggle"; 
+        kb_options ="grp:alt_caps_toggle";
         numlock_by_default = true;
         follow_mouse = 1;
         float_switch_override_focus = 0;
