@@ -139,7 +139,6 @@
         #"ALT, Return, exec, kitty --title float_kitty"
         #"$mainMod SHIFT, Return, exec, kitty --start-as=fullscreen -o 'font_size=16'"
         "$mainMod SHIFT, Q, killactive,"
-        #"$mainMod, F, fullscreen, 0"
         "$mainMod SHIFT, F, fullscreen, 1"
         "$mainMod, Space, togglefloating,"
         "$mainMod, Space, centerwindow,"
@@ -155,8 +154,8 @@
         #"$mainMod, T, exec, toggle_oppacity"
         #"$mainMod, E, exec, nautilus"
         "$mainMod SHIFT, B, exec, toggle_waybar"
-        "$mainMod, C ,exec, hyprpicker -a"
-        "$mainMod, W,exec, wallpaper-picker"
+        "$mainMod, C, exec, hyprpicker -a"
+        "$mainMod, W, exec, wallpaper-picker"
         "$mainMod, N, exec, swaync-client -t -sw"
         "$mainMod SHIFT, W, exec, vm-start"
 

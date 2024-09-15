@@ -21,7 +21,7 @@
       modi: "run,drun,window";
       lines: 5;
       cycle: false;
-      font: "JetBrainsMono NF Bold 15";
+      font: "JetBrainsMono NF Bold 10";
       show-icons: true;
       icon-theme: "Papirus-dark";
       terminal: "kitty";
@@ -47,7 +47,7 @@
     window {
       height: 480px;
       width: 400px;
-      border: 3px;
+      border: 1px;
       border-color: @border-col;
       background-color: @bg-col;
     }
@@ -94,13 +94,13 @@
 
     element {
       padding: 8px;
-      margin: 0px 10px 4px 4px;
+      margin: 0px 6px 4px 4px;
       background-color: @bg-col;
       text-color: @fg-col;
     }
 
     element-icon {
-      size: 28px;
+      size: 14px;
     }
 
     element selected {
