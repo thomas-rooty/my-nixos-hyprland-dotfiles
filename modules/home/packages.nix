@@ -24,7 +24,7 @@ in
     killall
     lazygit
     libnotify
-	  man-pages					            	  # extra man pages
+	man-pages					            	  # extra man pages
     mpv                               # video player
     ncdu                              # disk space
     nitch                             # systhem fetch util
@@ -78,6 +78,8 @@ in
     neofetch
     nodejs_22
     whatsapp-for-linux
+    gparted
+    mongodb-compass
     
     # C / C++
     gcc
