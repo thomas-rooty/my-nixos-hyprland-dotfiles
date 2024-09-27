@@ -18,11 +18,12 @@
         #"wl-paste --watch cliphist store &"
         "copyq --start-server"
         "hyprlock"
+        "blueman-applet"
       ];
 
       input = {
-        kb_layout = "fr";
-        kb_options ="grp:alt_caps_toggle";
+        kb_layout = "fr,us";
+        kb_options ="grp:win_space_toggle";
         numlock_by_default = true;
         follow_mouse = 1;
         float_switch_override_focus = 0;
@@ -31,6 +32,12 @@
         touchpad = {
           natural_scroll = true;
         };
+      };
+      
+      device = {
+        name = "r3-mouse";
+        accel_profile = "flat";
+        sensitivity = -0.5;
       };
 
       general = {
@@ -140,8 +147,8 @@
         #"$mainMod SHIFT, Return, exec, kitty --start-as=fullscreen -o 'font_size=16'"
         "$mainMod SHIFT, Q, killactive,"
         "$mainMod SHIFT, F, fullscreen, 1"
-        "$mainMod, Space, togglefloating,"
-        "$mainMod, Space, centerwindow,"
+        "$mainMod SHIFT, Space, togglefloating,"
+        "$mainMod SHIFT, Space, centerwindow,"
         #"$mainMod, Space, resizeactive, exact 950 600"
         "$mainMod, D, exec, rofi -show drun || pkill rofi"
         #"$mainMod SHIFT, D, exec, hyprctl dispatch exec '[workspace 4 silent] discord --enable-features=UseOzonePlatform --ozone-platform=wayland'"
@@ -161,7 +168,7 @@
 
         # screenshot
         "$mainMod, Print, exec, grimblast --notify --cursor --freeze save area ~/Pictures/$(date +'%Y-%m-%d-At-%Ih%Mm%Ss').png"
-        ",Print, exec, grimblast --notify --cursor --freeze copy area"
+        "CTRL SHIFT, C, exec, grimblast --notify --cursor --freeze copy area"
 
         # switch focus
         "$mainMod, left, movefocus, l"

@@ -24,7 +24,7 @@ in
     killall
     lazygit
     libnotify
-	man-pages					            	  # extra man pages
+	  man-pages					            	  # extra man pages
     mpv                               # video player
     ncdu                              # disk space
     nitch                             # systhem fetch util
@@ -80,6 +80,8 @@ in
     whatsapp-for-linux
     gparted
     mongodb-compass
+    blueman
+    bluez
     
     # C / C++
     gcc
