@@ -9,20 +9,18 @@
         "hash dbus-update-activation-environment 2>/dev/null &"
         "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP &"
         "nm-applet &"
-        #"wl-clip-persist --clipboard both"
         "swaybg -m fill -i $(find ~/Pictures/wallpapers/ -maxdepth 1 -type f) &"
         "hyprctl setcursor Bibata-Modern-Ice 16 &"
         "poweralertd &"
         "waybar &"
         "swaync &"
-        #"wl-paste --watch cliphist store &"
         "copyq --start-server"
         "hyprlock"
         "blueman-applet"
       ];
 
       input = {
-        kb_layout = "fr,us";
+        kb_layout = "us";
         kb_options ="grp:win_space_toggle";
         numlock_by_default = true;
         follow_mouse = 1;
@@ -177,28 +175,28 @@
         "$mainMod, down, movefocus, d"
 
         # switch workspace
-        "$mainMod, ampersand, workspace, 1"
-        "$mainMod, eacute, workspace, 2"
-        "$mainMod, quotedbl, workspace, 3"
-        "$mainMod, apostrophe, workspace, 4"
-        "$mainMod, parenleft, workspace, 5"
-        "$mainMod, minus, workspace, 6"
-        "$mainMod, egrave, workspace, 7"
-        "$mainMod, underscore, workspace, 8"
-        "$mainMod, ccedilla, workspace, 9"
-        "$mainMod, agrave, workspace, 10"
+        "$mainMod, 1, workspace, 1"
+        "$mainMod, 2, workspace, 2"
+        "$mainMod, 3, workspace, 3"
+        "$mainMod, 4, workspace, 4"
+        "$mainMod, 5, workspace, 5"
+        "$mainMod, 6, workspace, 6"
+        "$mainMod, 7, workspace, 7"
+        "$mainMod, 8, workspace, 8"
+        "$mainMod, 9, workspace, 9"
+        "$mainMod, 0, workspace, 10"
 
         # same as above, but switch to the workspace
-        "$mainMod SHIFT, ampersand, movetoworkspacesilent, 1" # movetoworkspacesilent
-        "$mainMod SHIFT, eacute, movetoworkspacesilent, 2"
-        "$mainMod SHIFT, quotedbl, movetoworkspacesilent, 3"
-        "$mainMod SHIFT, apostrophe, movetoworkspacesilent, 4"
-        "$mainMod SHIFT, parenleft, movetoworkspacesilent, 5"
-        "$mainMod SHIFT, minus, movetoworkspacesilent, 6"
-        "$mainMod SHIFT, egrave, movetoworkspacesilent, 7"
-        "$mainMod SHIFT, underscore, movetoworkspacesilent, 8"
-        "$mainMod SHIFT, ccedilla, movetoworkspacesilent, 9"
-        "$mainMod SHIFT, agrave, movetoworkspacesilent, 10"
+        "$mainMod SHIFT, 1, movetoworkspacesilent, 1" # movetoworkspacesilent
+        "$mainMod SHIFT, 2, movetoworkspacesilent, 2"
+        "$mainMod SHIFT, 3, movetoworkspacesilent, 3"
+        "$mainMod SHIFT, 4, movetoworkspacesilent, 4"
+        "$mainMod SHIFT, 5, movetoworkspacesilent, 5"
+        "$mainMod SHIFT, 6, movetoworkspacesilent, 6"
+        "$mainMod SHIFT, 7, movetoworkspacesilent, 7"
+        "$mainMod SHIFT, 8, movetoworkspacesilent, 8"
+        "$mainMod SHIFT, 9, movetoworkspacesilent, 9"
+        "$mainMod SHIFT, 0, movetoworkspacesilent, 10"
         #"$mainMod CTRL, c, movetoworkspace, empty"
 
         # window control
